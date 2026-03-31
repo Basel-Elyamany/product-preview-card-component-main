@@ -2,7 +2,7 @@
 
 A responsive product card built using **HTML and CSS**, based on a Frontend Mentor challenge.
 
-LIVE URL: [HERE]()
+LIVE URL: [HERE](https://basel-elyamany.github.io/product-preview-card-component-main/)
 
 ---
 
