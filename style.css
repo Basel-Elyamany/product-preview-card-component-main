@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Medium.ttf), url(fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url(fonts/Fraunces_72pt-Bold.ttf);
+}
+html {
+    --spacing: 20px;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img {
+    max-width: 100%;
+}
+main {
+    background-color: #fff;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 1.6;
+}
+.product {
+    max-width: 450px;
+}
+.container {
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+}
+.category {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    color: hsl(212, 21%, 50%);
+    margin-bottom: var(--spacing);
+}
+h1 {
+    font-family: Fraunces;
+    line-height: 1.2;
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing);
+}
+p {
+    font-family: Montserrat;
+    color: hsl(212, 21%, 50%);
+    margin-bottom: var(--spacing);
+    font-size: 1rem;
+}
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing);
+}
+.discount-price {
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+    font-size: 2rem;
+}
+.original-price {
+    font-family: Montserrat;
+    color: hsl(212, 21%, 60%);
+}
+button {
+    font-family: Montserrat;
+    font-size: 1rem;
+    border: unset;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 14px 0;
+    margin-bottom: var(--spacing);
+}
+.cart {
+    margin-right: 10px;
+}
+button:active {
+    background-color: hsl(158, 42%, 18%);
+}
+
+@media (width >= 800px) {
+    html {
+        font-size: 14px;
+        --spacing: 0;
+    }
+    main {
+        display: flex;
+        max-width: 680px;
+    }
+    .product {
+        display: flex;
+        width: 100%;
+    }
+    .product img {
+        content: url(images/image-product-desktop.jpg);
+    }
+    .container {
+        /* padding: unset; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px 35px;
+    }
+}
+
+@media (width >= 1900px) {
+    html{
+        font-size: 19px;
+    }
+    main {
+        max-width: 900px;
+    }
+}
